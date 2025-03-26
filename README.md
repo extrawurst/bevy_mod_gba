@@ -1,4 +1,18 @@
-# Bevy GameBoy Advance Example
+# Bevy Mod GameBoy Advance
+
+This crate provides integration between the [`agb`](https://crates.io/crates/agb) HAL for the GameBoy Advance, and the [Bevy game engine](https://crates.io/crates/bevy).
+
+Simply add the `AgbPlugin` to your `no_std` Bevy application, and you'll have access to:
+
+* The gamepad using Bevy's idiomatic `Gamepad` component
+* A basic renderer providing a `Sprite` component
+* Integration with `Time` and the built-in hardware timer
+* A custom application runner chasing V-Blank
+* Logging integration when using the mGBA emulator
+
+Below is a screenshot from the `game` example on the repository.
+
+![Screenshot from `examples/game.rs`](assets/game_capture.png)
 
 ## Building
 
