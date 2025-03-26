@@ -2,6 +2,11 @@
 name = "bevy_mod_gba"
 version = "0.1.0-rc.1"
 edition = "2024"
+keywords = ["game", "engine", "gamedev", "bevy", "no_std", "gameboy"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/bevyengine/bevy"
+rust-version = "1.85.0"
+description = "Platform support for the GameBoy Advance with the Bevy game engine"
 
 [dependencies]
 bevy = { version = "0.16.0-rc.1", default-features = false, features = [
@@ -11,9 +16,6 @@ bevy = { version = "0.16.0-rc.1", default-features = false, features = [
 ] }
 agb = { version = "0.21.1" }
 log = { version = "0.4", default-features = false }
-derive_more = { version = "2.0.1", default-features = false, features = [
-  "from",
-] }
 
 [lints.clippy]
 doc_markdown = "warn"
