@@ -2,7 +2,7 @@
 name = "bevy_mod_gba"
 version = "0.1.0-rc.1"
 edition = "2024"
-keywords = ["game", "engine", "gamedev", "bevy", "no_std", "gameboy"]
+keywords = ["game", "gamedev", "bevy", "no_std", "gameboy"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/bevyengine/bevy"
 rust-version = "1.85.0"
