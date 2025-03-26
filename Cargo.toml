@@ -1,10 +1,10 @@
 [package]
 name = "bevy_mod_gba"
-version = "0.1.0-rc.1"
+version = "0.1.0-rc.2"
 edition = "2024"
 keywords = ["game", "gamedev", "bevy", "no_std", "gameboy"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/bevyengine/bevy"
+repository = "https://github.com/bushrat011899/bevy_mod_gba"
 rust-version = "1.85.0"
 description = "Platform support for the GameBoy Advance with the Bevy game engine"
 
