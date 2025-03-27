@@ -12,7 +12,7 @@ Simply add the `AgbPlugin` to your `no_std` Bevy application, and you'll have ac
 
 Below is a screenshot from the `game` example on the repository.
 
-![Screenshot from `examples/game.rs`](assets/game_capture.png)
+![Demo from `examples/game.rs`](assets/game_capture.gif)
 
 ## Building
 
