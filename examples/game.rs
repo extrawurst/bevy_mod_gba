@@ -161,7 +161,7 @@ struct Jumps {
 fn spawn_player(mut commands: Commands, sprites: NonSend<Option<Sprites>>) {
     let sprites = sprites.as_ref().unwrap();
     commands.spawn((
-        Transform::from_xyz(112., 144., 0.),
+        Transform::from_xyz(98., 128., 0.),
         sprites.player.clone(),
         Player,
         Jumps {
@@ -173,7 +173,7 @@ fn spawn_player(mut commands: Commands, sprites: NonSend<Option<Sprites>>) {
 
 fn reset_jumps(mut query: Query<(&mut Jumps, &Transform)>) {
     for (mut jumps, transform) in &mut query {
-        if transform.translation.y > 143. {
+        if transform.translation.y > 127. {
             jumps.current = 0;
         }
     }
@@ -256,6 +256,6 @@ fn apply_velocity(mut entities: Query<(&mut Transform, &Velocity)>) {
 }
 
 fn clamp_player_to_screen(mut player: Single<&mut Transform, With<Player>>) {
-    player.translation.x = player.translation.x.clamp(0., 224.);
-    player.translation.y = player.translation.y.clamp(0., 144.);
+    player.translation.x = player.translation.x.clamp(0., 208.);
+    player.translation.y = player.translation.y.clamp(0., 128.);
 }
